@@ -7,8 +7,7 @@ from kmk.modules.encoder import EncoderHandler
 
 keyboard = KMKKeyboard()
 
-# ===== MATRIX PINS =====
-# Update these if your schematic uses different pins
+
 keyboard.col_pins = (
     board.D0,
     board.D1,
@@ -23,11 +22,11 @@ keyboard.row_pins = (
 
 keyboard.diode_orientation = DiodeOrientation.COL2ROW
 
-# ===== ROTARY ENCODER =====
+
 encoder_handler = EncoderHandler()
 keyboard.modules.append(encoder_handler)
 
-# Replace D6 and D7 with your encoder A/B pins
+
 encoder_handler.pins = (
     (board.D6, board.D7, None),
 )
@@ -38,7 +37,7 @@ encoder_handler.map = [
     ),
 ]
 
-# ===== KEYMAP =====
+
 keyboard.keymap = [
     [
         KC.COPY,   KC.PASTE, KC.CUT,
@@ -47,6 +46,5 @@ keyboard.keymap = [
     ]
 ]
 
-# ===== START =====
 if __name__ == "__main__":
     keyboard.go()
