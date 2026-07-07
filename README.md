@@ -34,21 +34,6 @@ This is a custom 3x3 macropad designed for productivity and media controls. It u
 <img width="1060" height="612" alt="image" src="https://github.com/user-attachments/assets/03b91f1f-e923-40d4-8e9f-c19690ea5546" />
 
 
-## Bill of Materials
-
-| Component | Quantity |
-|------------|------------|
-| Seeed XIAO RP2040 | 1 |
-| MX Switches | 9 |
-| Keycaps | 9 |
-| Rotary Encoder | 1 |
-| Encoder Knob | 1 |
-| PCB | 1 |
-| 3D Printed Case | 1 |
-| Diodes | 9 |
-| Screws | 4 |
-| Heated inserts | 4 |
-
 ## Firmware
 
 KMK Firmware running on CircuitPython.
